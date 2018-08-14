@@ -1,6 +1,6 @@
 # Welcome
 ## I'm Nick and this is my portfoilio
-### Have a look around
+### Have a look around. Learn a little about me.
 
 I am currently learning to code webapps. I am attending a class to lean coding because i felt that it would work better for me after not doing well in reguar college.
 
