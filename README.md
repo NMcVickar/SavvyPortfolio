@@ -14,4 +14,4 @@ or find me on [GitHub](https://github.com/NMcVickar)
 
 ---
 
-![This is a Photo](https://pbs.twimg.com/profile_images/1008934611383042048/CxB8r4NP_400x400.jpg)
+![This a Photo](https://pbs.twimg.com/profile_images/1008934611383042048/CxB8r4NP_400x400.jpg)
