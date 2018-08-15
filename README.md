@@ -7,8 +7,8 @@ I am currently learning to code webapps. I am attending a class to lean coding b
 
 Here is some ***Contact Information:***
 
- **Phone**: (618) 799-9959
- **Email**: NMcVickar@aol.com
+**Phone**: (618) 799-9959
+**Email**: NMcVickar@aol.com
 
 or find me on [GitHub](https://github.com/NMcVickar)
 
