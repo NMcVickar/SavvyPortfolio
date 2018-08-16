@@ -1,0 +1,17 @@
+#Nav{
+    font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#Header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://lh3.googleusercontent.com/H-JEEmhk4HUZmecnj5OXcT3wcXzIOFdci6mQhCMrzm7xvZmZHID2uVQWeKQhvrL8awYRJNNU9zHsDoUV-a88RMuNCHBqsUQLONWLmyXu0lNuSO4-mOSI_gCldS-WKnAVfBi585dJASaIzDpOwKKiJY6LSggSsDpg1iK-Fwkk9tu4Q-XKJ88dCd7Y3OfVRPAwnRfI1gzzIfRI4z2u_zVIYb35HqAxYIoV_fjvBmh8PCGp9xam1iSlaIR9y8KqeXi5Jei18Oa1SGn_KiquWuUdrfu2nagnFQHDeqXlQSbwOuHGE4dAEFirOccD8nNu0FPIzc4JiyJViUZIWhssnmBqt6Km_4fktqUu6XprRm1VDrXNi8UHNXxA_v_IqX7yunlESg-_gFHr1JbDLaVFfpoY-gCY53RUSPUifoyrqvSE1H8EFOc_M5Tap8CpDh-oIJ_P6jY7wjvG-NeoTCJYnIC5px40LjS3j4kajhNQ-M9KhkdOxxfJE06wddnUAu2SMXK1Le-HIMyZRYfTi6Z3Zv3ur-R72tsJufDlrELwwykXHACIN7aFRykXTqL9vIzE_O7rVZ_2tjQTS4MmX4b8hfgizZwlEaqoa-WhH4Tn2mg=w1920-h424-no);
+    background-size: 100% 100%;
+    color: white;
+}
+
+#Body{
+    background-color: steelblue;
+    font-family: 'Courier New', Courier, monospace;
+
+}
