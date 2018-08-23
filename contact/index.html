@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cuprum|Play" rel="stylesheet">
     <link rel="stylesheet" href="../css/Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Me</title>
 </head>
 
 <body>
-    <div id="top">
-        <div id="navigation">
+    <div id="navigation">
+        <div class="container">
             <ul>
                 <li>
                     <a href="../"> Home </a>
@@ -33,15 +37,74 @@
             </ul>
         </div>
     </div>
-    <div id="header"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
+
+    <div id="header">
+        <div class="container">
+<h1>Tell me what you think here
+    Areas with an asterisk(*) are required
+</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <!--
+  The action attribute defines where on the server the form data should be sent
+  The method attribute specifies the HTTP method (GET or POST)
+-->
+
+            <form action="https://formspree.io/nmcvickar@aol.com" method="POST">
+
+                <input type="text" name="firstname" placeholder="First Name" size="100" autofocus required>
+                <input type="text" name="lastname" placeholder="Last Name" size="100" required>
+                <input type="email" name="userEmail" placeholder="your.email@example.com" required>
+
+                <label>What's this message about?
+                    <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
+                    <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
+                    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+                </label>
+
+                <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
+                <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+
+                <label for="marketing">How did you hear about me?</label>
+                <select name="marketing">
+                    <optgroup label="Online">
+                        <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+                        <option value="github">Online Portfolio (GitHub)</option>
+                        <option value="search">Search Engine</option>
+                        <option value="email">Email</option>
+                    </optgroup>
+                    <optgroup label="In-Person">
+                        <option value="networking">We met at a networking event</option>
+                        <option value="referral">Personal referral</option>
+                        <option value="random">We met somewhere else</option>
+                    </optgroup>
+                    <option value="other">Other</option>
+                </select>
+
+                <textarea name="user_message" rows="8" cols="40"></textarea>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div id="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
 
     <div id="b-nav">
         <div class="link">
             <a href="../"> Home </a>
             <a href="../Projects/"> Projects </a>
-            <a href="./Index.html"> Blog </a>
+            <a href="../Blog/"> Blog </a>
+            <a href="../contact/"> contact </a>
         </div>
     </div>
 </body>

@@ -1,26 +1,28 @@
 body {
-    background-color: black;
+    background-color: #444343;
     margin: 0;
     display: grid;
-    grid-template-areas: "navigation" "header" "content" "footer";
-    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas: "navigation" "header" "content" "footer" "b-nav";
+    grid-template-rows: min-content min-content auto min-content min-content;
 }
 
+/*
 #top {
-    background-image: url(https://lh3.googleusercontent.com/H-JEEmhk4HUZmecnj5OXcT3wcXzIOFdci6mQhCMrzm7xvZmZHID2uVQWeKQhvrL8awYRJNNU9zHsDoUV-a88RMuNCHBqsUQLONWLmyXu0lNuSO4-mOSI_gCldS-WKnAVfBi585dJASaIzDpOwKKiJY6LSggSsDpg1iK-Fwkk9tu4Q-XKJ88dCd7Y3OfVRPAwnRfI1gzzIfRI4z2u_zVIYb35HqAxYIoV_fjvBmh8PCGp9xam1iSlaIR9y8KqeXi5Jei18Oa1SGn_KiquWuUdrfu2nagnFQHDeqXlQSbwOuHGE4dAEFirOccD8nNu0FPIzc4JiyJViUZIWhssnmBqt6Km_4fktqUu6XprRm1VDrXNi8UHNXxA_v_IqX7yunlESg-_gFHr1JbDLaVFfpoY-gCY53RUSPUifoyrqvSE1H8EFOc_M5Tap8CpDh-oIJ_P6jY7wjvG-NeoTCJYnIC5px40LjS3j4kajhNQ-M9KhkdOxxfJE06wddnUAu2SMXK1Le-HIMyZRYfTi6Z3Zv3ur-R72tsJufDlrELwwykXHACIN7aFRykXTqL9vIzE_O7rVZ_2tjQTS4MmX4b8hfgizZwlEaqoa-WhH4Tn2mg=w1920-h424-no);
+background-color: aqua;
     background-size: 100% 100%;
-    min-height: 200px;
-}
+} */
 
 #navigation {
     font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    display: inline;
+    background-color: aqua;
+    grid-area: navigation;
     position: sticky;
     top: 0;
 }
 
 #navigation>ul {
-    color: cyan;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,11 +52,13 @@ body {
 #header {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    grid-area: header;
 }
 
 #content {
     background-color: #bbbbbb;
     padding: 10px;
+    grid-area: content;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -66,12 +70,20 @@ body {
     padding: 5px;
     min-height: 20px;
     background-color: steelblue;
+    grid-area: footer;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
 }
 
-#b-nav {
+#social {
     display: inline;
+}
+
+#b-nav {
+    grid-area: b-nav;
+    display: inline;
+    justify-content: space-between;
+    
 }
 
 .intro {
@@ -92,4 +104,35 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: steelblue;
+}
+
+input {
+    margin: 5px;
+    display: flex;
+}
+
+input[type=text], [type=email] {
+    width: 70%;
+}
+
+label {
+    font-family: 'Play', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Cuprum', sans-serif;
+}
+
+img {
+    width: 90px;
+    height: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        grid-template-areas: "navigation header" "navigation content" "navigation footer" "navigation b-nav";
+        grid-template-rows: min-content auto min-content min-content;
+        grid-template-columns: 20vw auto;
+    }
+    #navigation>ul {
+        flex-direction: column;
+    }
 }
