@@ -16,6 +16,7 @@ background-color: aqua;
     font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     display: inline;
+    justify-content: space-between;
     background-color: aqua;
     grid-area: navigation;
     position: sticky;
@@ -60,10 +61,6 @@ background-color: aqua;
     padding: 10px;
     grid-area: content;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#content li:hover {
-    background-color: fuchsia;
 }
 
 #footer {
