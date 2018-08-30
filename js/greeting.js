@@ -1,4 +1,4 @@
-var welcomeUser = function welcomeUser(){
+export default function welcomeUser(){
     var userName = prompt('What is you\'re Designation User?');
 
     if(userName === ''){
@@ -6,9 +6,6 @@ var welcomeUser = function welcomeUser(){
     }
     else{
         // alert('Welcome to my Page, ' + userName);
-        document.querySelector('#greeting').innerHTML = `<h3>Welcome to my Portfolio page, ${userName} </h3>`;
+        document.querySelector('#greeting').textContent = `<h3>Welcome to my test page, ${userName} </h3>`;
     }
-};
-
-
-welcomeUser();
+}

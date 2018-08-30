@@ -4,6 +4,7 @@
   "description": "I am currently learning to code webapps. I am attending a class to lean coding because i felt that it would work better for me after not doing well in reguar college.",
   "main": "index.js",
   "scripts": {
+    "start": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/NMcVickar/SavvyPortfolio#readme",
   "devDependencies": {
+    "cssnano": "^4.1.0",
     "eslint": "^5.3.0"
+  },
+  "dependencies": {
+    "components": "^0.1.0",
+    "parcel":"^1.9.7"
   }
 }

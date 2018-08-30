@@ -1,6 +1,11 @@
 body {
     background-color: #444343;
     margin: 0;
+}
+
+#root {
+    background-color: #444343;
+    margin: 0;
     display: grid;
     grid-template-areas: "navigation" "header" "content" "footer" "b-nav";
     grid-template-rows: min-content min-content auto min-content min-content;
@@ -80,7 +85,6 @@ background-color: aqua;
     grid-area: b-nav;
     display: inline;
     justify-content: space-between;
-    
 }
 
 .intro {
@@ -124,7 +128,7 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-    body {
+    #root {
         grid-template-areas: "navigation header" "navigation content" "navigation footer" "navigation b-nav";
         grid-template-rows: min-content auto min-content min-content;
         grid-template-columns: 20vw auto;
