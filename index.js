@@ -12,7 +12,7 @@ var root = document
 var tog = 0;
 
 function handelNavigation(event){
-    var newState = State;
+    var newState = Object.assign({}, State);
 
     newState.active = event.target.textContent;
 

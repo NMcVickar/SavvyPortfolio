@@ -17,8 +17,24 @@ export default `
                     </ul>
                 </li>
 
-                <li>Experience</li>
-                <li>Side Projcts</li>
+                <li>
+                    Experience
+                    <ul>
+                        <li>Website Maintence</li>
+                        <li>WordPress Management</li>
+                        <li>Data Entry</li>
+                        <li>Inventory Management</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    Side Projcts
+                    <ul>
+                        <li>Server Maintence</li>
+                        <li>Networking</li>
+                        <li>System Assembly</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

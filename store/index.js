@@ -1,5 +1,5 @@
 export { default as active } from './Active';
 export { default as Home } from './Home';
-export { default as projects } from './Projects';
-export { default as blog } from './Blog';
-export { default as conact } from './Contact';
+export { default as Projects } from './Projects';
+export { default as Blog } from './Blog';
+export { default as Contact } from './Contact';
