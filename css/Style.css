@@ -59,13 +59,26 @@ background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     grid-area: header;
+    display: inline;
 }
 
 #content {
     background-color: #bbbbbb;
     padding: 10px;
+    display: inline;
     grid-area: content;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#content .about>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#content .about>ul>li {
+    display: inline;
+    position: relative;
 }
 
 #footer {
@@ -87,18 +100,24 @@ background-color: aqua;
     justify-content: space-between;
 }
 
-.intro {
-    color: azure;
-}
-
 .container {
     width: 100%;
-    max-width: 500px;
 }
 
-.current {
-    font-family: Arial, Helvetica, sans-serif;
-    color: aqua;
+.me {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.greeting{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about ul ul{
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
 }
 
 .link {

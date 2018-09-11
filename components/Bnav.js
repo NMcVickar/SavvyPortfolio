@@ -1,4 +1,5 @@
-export default `
+export default function Bnav(){
+    return `
 <div id = b-nav<
 <div class="link">
 <a href="/"> Home </a>
@@ -8,3 +9,4 @@ export default `
 </div>
 </div>
 `;
+}
