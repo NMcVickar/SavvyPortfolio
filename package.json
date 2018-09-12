@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "components": "^0.1.0",
-    "parcel":"^1.9.7"
+    "navigo": "^7.1.2",
+    "parcel": "^1.9.7"
   }
 }

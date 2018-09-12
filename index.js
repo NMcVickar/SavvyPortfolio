@@ -1,3 +1,4 @@
+import Navigo from 'navigo';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -9,21 +10,13 @@ import * as State from './store';
 var root = document
     .querySelector('#root');
 
+var router = new Navigo(window.location.origin);
+
 var tog = 0;
 
-function handelNavigation(event){
-    var newState = Object.assign({}, State);
-
-    newState.active = event.target.textContent;
-
-    event.preventDefault();
-
-
-    render(newState); // eslint-disable-line
-}
 
 function render(state){
-    var links;
+    console.log('router ->',  router);
 
     document;
     root.innerHTML = `
@@ -33,18 +26,17 @@ function render(state){
             ${Footer()}
             ${Bnav()}
  `;
-    links = document.querySelectorAll('#navigation a');
 
-    for(let i = 0; i < links.length; i++){
-        links[i]
-            .addEventListener(
-                'click',
-                handelNavigation
-            )
-        ;
-    }
+    router.updatePageLinks();
 }
-render(State);
+
+function handelNavigation(activePage){
+    var newState = Object.assign({}, State);
+
+    newState.active = activePage;
+
+    render(newState); // eslint-disable-line
+}
 
 function showKnow(){
     if(tog === 0){
@@ -64,7 +56,10 @@ function showKnow(){
         tog = 0;
     }
 }
-
+router
+    .on('/:page',(params) => handelNavigation(params.page))
+    .on('/', () => handelNavigation('Home'))
+    .resolve();
     
 // about[1]
 //     .addEventListener(
@@ -84,6 +79,5 @@ function showKnow(){
 //         }
 //     )
 
-
-Greeting();
+// Greeting();
 showKnow();
