@@ -6,7 +6,7 @@ export default `
             <ul>
                 <li>
                     What I Know
-                    <ul>
+                    <ul class ="dropdown">
                         <li>Robotics C & C++</li>
                         <li>Java</li>
                         <li>JavaScript</li>
@@ -19,7 +19,7 @@ export default `
 
                 <li>
                     Experience
-                    <ul>
+                    <ul class = "dropdown">
                         <li>Website Maintence</li>
                         <li>WordPress Management</li>
                         <li>Data Entry</li>
@@ -29,7 +29,7 @@ export default `
                 
                 <li>
                     Side Projcts
-                    <ul>
+                    <ul class = "dropdown">
                         <li>Server Maintence</li>
                         <li>Networking</li>
                         <li>System Assembly</li>

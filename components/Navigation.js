@@ -14,11 +14,13 @@ function Link(link){
 
 
 export default function Navigation(state){
-    var links = '';
-    
-    for(let i = 0; i < state.links.length; i++){
-        links += Link(state.links[i]);
-    }
+    var links = state
+        .links
+        .reduce((acc, link) => acc += Link(link),
+            ''
+        );
+
+    state.links.forEach((link) => links += Link(link));
     
     return `
 <div id="navigation">
