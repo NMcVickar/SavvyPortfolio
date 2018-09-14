@@ -7,14 +7,15 @@ import Footer from './components/Footer';
 import Bnav from './components/Bnav';
 import Greeting from './js/greeting';
 import * as State from './store';
-import Post from './components/Post';
 
 var root = document
     .querySelector('#root');
 
 var router = new Navigo(window.location.origin);
 
-var tog = [ false, false, false ];
+var newState = Object.assign({}, State);
+
+var tog = [ true, true, true ];
 var visibility = [ 'none', 'none', 'none' ];
 var about;
 var dropdown;
@@ -29,7 +30,7 @@ function render(state){
     root.innerHTML = `
             ${Navigation(state[state.active])}
             ${Header(state[state.active])}
-            ${Content(state[state.active])}
+            ${Content(state)}
             ${Footer(state[state.active])}
             ${Bnav(state[state.active])}
  `;
@@ -55,8 +56,6 @@ function render(state){
 }
 
 function handelNavigation(activePage){
-    var newState = Object.assign({}, State);
-
     newState.active = activePage;
 
     render(newState); // eslint-disable-line
@@ -70,4 +69,7 @@ router
 
 axios
     .get('http://jsonplaceholder.typicode.com/posts')
-    .then((response) => console.log(response.data.map(Post)));
+    .then((response) => {
+        newState.posts = response.data;
+        render(newState);
+    });

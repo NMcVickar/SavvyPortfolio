@@ -1,4 +1,5 @@
-export default `
+export default function(){
+    return `
 <div id=content>
     <div class="container">
         <ol>
@@ -9,3 +10,4 @@ export default `
     </div>
 </div>
 `;
+}

@@ -1,5 +1,6 @@
 import Greeting from '../../js/greeting';
-export default `
+export default function(){
+    return `
 <div id=content>
     <div class="container">
         <p>Here is a Little Bit About Me and My Background.</p>
@@ -42,5 +43,5 @@ export default `
 
 </div>
 `;
-
+}
 // Greeting();
