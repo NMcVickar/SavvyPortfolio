@@ -6,6 +6,6 @@ export default function welcomeUser(){
     }
     else{
         // alert('Welcome to my Page, ' + userName);
-        document.querySelector('#greeting').textContent = 'Welcome to my test page, ' + userName;
+        document.querySelectorAll('#greeting').textContent = 'Welcome to my test page, ' + userName;
     }
 }

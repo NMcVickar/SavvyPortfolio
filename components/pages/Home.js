@@ -1,3 +1,4 @@
+import Greeting from '../../js/greeting';
 export default `
 <div id=content>
     <div class="container">
@@ -41,3 +42,5 @@ export default `
 
 </div>
 `;
+
+// Greeting();

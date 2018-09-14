@@ -1,4 +1,5 @@
 import Navigo from 'navigo';
+import axios from 'axios';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -6,6 +7,7 @@ import Footer from './components/Footer';
 import Bnav from './components/Bnav';
 import Greeting from './js/greeting';
 import * as State from './store';
+import Post from './components/Post';
 
 var root = document
     .querySelector('#root');
@@ -28,8 +30,8 @@ function render(state){
             ${Navigation(state[state.active])}
             ${Header(state[state.active])}
             ${Content(state[state.active])}
-            ${Footer()}
-            ${Bnav()}
+            ${Footer(state[state.active])}
+            ${Bnav(state[state.active])}
  `;
     about = document.querySelectorAll('.about>ul>li');
     dropdown = document.querySelectorAll('.dropdown');
@@ -60,58 +62,12 @@ function handelNavigation(activePage){
     render(newState); // eslint-disable-line
 }
 
-
-// function showKnow(){
-//     console.log(tog);
-//     if(tog === 0){
-//         document.querySelector('.about li')
-//             .addEventListener(
-//                 'click',
-//                 () => {
-//                     console.log('click', tog);
-//                     document.querySelector('.about ul ul').style.display = 'block';
-//                     console.log('this is working');
-//                     tog = 1;
-//                 }
-//             );
-//     }
-//     else if(tog === 1){
-//         document.querySelector('.about li')
-//             .addEventListener(
-//                 'click',
-//                 () => {
-//                     console.log('click else');
-//                     document.querySelector('.about ul ul').style.display = 'none';
-//                     console.log('this is not working');
-//                     tog = 0;
-//                 }
-//             );
-//     }
-// }
-// document.querySelectorAll('.about li')[1]
-//     .addEventListener(
-//         'click',
-//         () => {
-//             document.querySelector('.about ul ul').style.display = 'block';
-//             console.log('this is working');
-//         }
-//     );
-
-
-// document.querySelector('.about li')[2]
-//     .addEventListener(
-//         'click',
-//         () => {
-//             document.querySelector('.about ul ul').style.display = 'block';
-//             console.log('this is working');
-//         }
-//     );
-
 router
     .on('/:page',(params) => handelNavigation(params.page))
     .on('/', () => handelNavigation('Home'))
     .resolve();
-    
 
-// Greeting();
-// showKnow();
+
+axios
+    .get('http://jsonplaceholder.typicode.com/posts')
+    .then((response) => console.log(response.data.map(Post)));
