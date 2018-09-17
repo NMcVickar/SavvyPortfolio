@@ -1,6 +1,6 @@
 import Navigo from 'navigo';
 import axios from 'axios';
-import Victor from 'Victor';
+import Victor from 'victor';
 import MouseMove from './components/MouseMove';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
