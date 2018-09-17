@@ -1,5 +1,7 @@
 import Navigo from 'navigo';
 import axios from 'axios';
+import Victor from 'Victor';
+import MouseMove from './components/MouseMove';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -20,9 +22,9 @@ var visibility = [ 'none', 'none', 'none' ];
 var about;
 var dropdown;
 
-function show(e){
-    tog[e.target.value] = !tog[e.target.value];
-    visibility[e.target.value] === 'none' ? visibility[e.target.value] = 'block' : visibility[e.target.value] = 'none';
+function show(event){
+    tog[event.target.value] = !tog[event.target.value];
+    visibility[event.target.value] === 'none' ? visibility[event.target.value] = 'block' : visibility[event.target.value] = 'none';
 }
 
 function render(state){
@@ -53,6 +55,11 @@ function render(state){
     }
   
     router.updatePageLinks();
+    window.addEventListener(
+        'mousemove',
+        (event) => {
+            MouseMove(event);
+        });
 }
 
 function handelNavigation(activePage){
@@ -73,3 +80,5 @@ axios
         newState.posts = response.data;
         render(newState);
     });
+
+Greeting();
