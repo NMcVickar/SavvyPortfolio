@@ -110,7 +110,11 @@ Axios.get('http://api.openweathermap.org/data/2.5/weather?q=Belleville,62223&APP
         });
     });
 
-Axios.get('https://api.github.com/users/nmcvickar/repos')
+Axios.get('https://api.github.com/users/nmcvickar/repos',{
+    'Headers': {
+        'Authorization': 'token f36c787b6cf6b42a3ffeea83a5515491a1e791dc'
+    }
+})
     .then((response) => {
         store.dispatch((state) => {
             state.repos = response.data;

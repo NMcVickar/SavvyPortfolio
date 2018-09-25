@@ -1,9 +1,18 @@
-import Greeting from '../../js/greeting';
+// import Greeting from '../../js/greeting';
+import {
+    capitalize,
+    kebabCase,
+} from 'lodash';
 
 function Repo(repo){
+    var name = kebabCase(repo.name)
+        .split('-')
+        .map(capitalize)
+        .join(' ');
+
     return `
     <li>
-    <a href="${repo.url}"> ${repo.name}</a>
+    <a href="${repo.url}"> ${name}</a>
     </li>
     `;
 }
