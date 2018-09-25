@@ -61,26 +61,12 @@ function render(state){
 
     router.updatePageLinks();
 
-    // while(i = 0 i >= pairs.length i++){
-    //     let i = pairs[i];
-    //     Game(i);
-    // }
+    var i = 0;
 
-    // window.addEventListener('mousemove', (event) => {
-    //     MouseMove(event);
-    // });
-
-
-    //     var vec1 = new Victor(582, 340);
-
-    //     console.log(vec1);
-    //     vec1.toString();
-    //     // => x: 582, y:340
-
-    //     var vec2 = Victor(100, 200);
-
-//     vec2.toString();
-// // => x: 100, y:200
+    while(i > 20){
+        Game();
+        i++;
+    }
 }
 
 function handelNavigation(activePage){
@@ -112,7 +98,7 @@ Axios.get('http://api.openweathermap.org/data/2.5/weather?q=Belleville,62223&APP
 
 Axios.get('https://api.github.com/users/nmcvickar/repos',{
     'Headers': {
-        'Authorization': 'token f36c787b6cf6b42a3ffeea83a5515491a1e791dc'
+        'Authorization': `token ${process.env.GITHUB_API_KEY}` //eslint-disable-line
     }
 })
     .then((response) => {

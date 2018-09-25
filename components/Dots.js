@@ -21,3 +21,21 @@ export default function Dot(){
 </div>
 `;
 }
+
+// track mouse
+
+// window.addEventListener('mousemove', (event) => {
+//     MouseMove(event);
+// });
+
+
+//     var vec1 = new Victor(582, 340);
+
+//     console.log(vec1);
+//     vec1.toString();
+//     // => x: 582, y:340
+
+//     var vec2 = Victor(100, 200);
+
+//     vec2.toString();
+// // => x: 100, y:200
