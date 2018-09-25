@@ -1,4 +1,4 @@
-import Victor from 'Victor';
+import Victor from 'victor';
 
 function Game(){
     // bounds
