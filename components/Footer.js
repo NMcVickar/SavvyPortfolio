@@ -1,4 +1,7 @@
-export default function Footer(){
+import Weather from './Weather';
+
+
+export default function Footer(state){
     return `
 <div id=footer>
     <div class="container">
@@ -13,6 +16,9 @@ export default function Footer(){
             </li>
             <li>
                 <a href="https://github.com/NMcVickar" target="_blank"> <i class="fab fa-github"></i> </a>
+            </li>
+            <li>
+            ${Weather(state.Weather)}
             </li>
         </ul>
     </div>

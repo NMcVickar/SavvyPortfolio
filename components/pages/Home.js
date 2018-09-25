@@ -1,5 +1,20 @@
 import Greeting from '../../js/greeting';
-export default function(){
+
+function Repo(repo){
+    return `
+    <li>
+    <a href="${repo.url}"> ${repo.name}</a>
+    </li>
+    `;
+}
+
+export default function(state){
+    var repos = state
+        .repos
+        .map(Repo)
+        .join('');
+
+    
     return `
 <div id=content>
     <div class="container">
@@ -39,8 +54,10 @@ export default function(){
                 </li>
             </ul>
         </div>
+        <ol>
+        ${repos}
+        </ol>
     </div>
-
 </div>
 `;
 }
