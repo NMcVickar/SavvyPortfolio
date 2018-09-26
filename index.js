@@ -61,12 +61,12 @@ function render(state){
 
     router.updatePageLinks();
 
-    var i = 0;
+    // var i = 0;
 
-    while(i > 20){
-        Game();
-        i++;
-    }
+    // while(i > 20){
+    //     Game();
+    //     i++;
+    // }
 }
 
 function handelNavigation(activePage){
