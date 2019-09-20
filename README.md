@@ -2,7 +2,7 @@
 ## I'm Nick and this is my portfoilio
 ### Have a look around. Learn a little about me.
 
-I am currently learning to code webapps. I am attending a class to lean coding because i felt that it would work better for me after not doing well in reguar college.
+I am currently learning to code webapps. I am attending a class to lean coding because I wanted to broaden my horizons and learn new skills.
 
 
 Here is some ***Contact Information:***
@@ -11,7 +11,3 @@ Here is some ***Contact Information:***
 **Email**: NMcVickar@aol.com
 
 or find me on [GitHub](https://github.com/NMcVickar)
-
----
-
-![This a Photo](https://pbs.twimg.com/profile_images/1008934611383042048/CxB8r4NP_400x400.jpg)
