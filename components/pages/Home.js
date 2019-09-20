@@ -54,7 +54,7 @@ export default function(state){
                 </li>
                 
                 <li>
-                    Side Projcts
+                    Personal Projcts
                     <ul class = "dropdown">
                         <li>Server Maintence</li>
                         <li>Networking</li>

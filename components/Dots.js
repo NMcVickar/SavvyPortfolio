@@ -13,29 +13,19 @@ function Game(){
 
 export default function Dot(){
     var coordinates = Game();
+    // var vec = new Victor(event.clientX, event.clientY);
 
     console.log(coordinates);
     
     return `
-<div class="dot" style="top:${coordinates.y};right:${coordinates.x}">
+<div class="dot" style="top:${coordinates.y}px;right:${coordinates.x}px">
 </div>
 `;
 }
 
 // track mouse
 
-// window.addEventListener('mousemove', (event) => {
-//     MouseMove(event);
-// });
-
-
-//     var vec1 = new Victor(582, 340);
-
-//     console.log(vec1);
-//     vec1.toString();
-//     // => x: 582, y:340
-
-//     var vec2 = Victor(100, 200);
-
-//     vec2.toString();
-// // => x: 100, y:200
+// //export default function OnMouseMove(event){
+//     var vec = new Victor(event.clientX, event.clientY);
+    
+//     console.log('mouse location:', vec)

@@ -11,50 +11,44 @@ body {
 	grid-template-rows: min-content min-content auto min-content min-content;
 }
 
-/*
-#top {
-background-color: aqua;
-    background-size: 100% 100%;
-} */
-
 #navigation {
 	font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 		sans-serif;
 	color: black;
 	display: inline;
 	justify-content: space-between;
-	background-color: aqua;
+	background-color: gray;
 	grid-area: navigation;
 	position: sticky;
 	top: 0;
-}
 
-#navigation > ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
+	> ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
-#navigation li {
-	color: red;
-}
+	li {
+		color: red;
+	}
 
-#navigation a + ul:hover,
-#navigation a:hover + ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
+	a + ul:hover,
+	a:hover + ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
-#navigation a + ul {
-	display: none;
-	position: absolute;
-	left: 0;
-}
+	a + ul {
+		display: none;
+		position: absolute;
+		left: 0;
+	}
 
-#navigation > ul > li {
-	display: inline;
-	position: relative;
+	> ul > li {
+		display: inline;
+		position: relative;
+	}
 }
 
 #header {
@@ -70,19 +64,18 @@ background-color: aqua;
 	display: inline;
 	grid-area: content;
 	font-family: Arial, Helvetica, sans-serif;
-}
 
-#content .about > ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
+	.about > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
-#content .about > ul > li {
-	display: inline;
-	position: relative;
+	.about > ul > li {
+		display: inline;
+		position: relative;
+	}
 }
-
 #footer {
 	padding: 5px;
 	min-height: 20px;
@@ -121,7 +114,7 @@ background-color: aqua;
 .about ul ul {
 	display: none;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: blue;
+	color: azure;
 }
 
 .link {
@@ -131,12 +124,20 @@ background-color: aqua;
 }
 
 .dot {
-	background-color: hotpink;
-	height: 25vh;
-	width: 75vw;
-    border: solid black 5px;
-    position: fixed;
+	color: hotpink;
+	border: solid black 1px;
+	position: fixed;
 }
+
+// h1 {
+// 	cursor: pointer;
+// 	opacity: 0.15;
+// 	transition: 1.5s all ease;
+// }
+
+// h1:hover {
+// 	opacity: 1;
+// }
 
 input {
 	margin: 5px;
